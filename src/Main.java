@@ -11,7 +11,7 @@ public class Main {
         System.out.println(theLostWorld + "\n");
         System.out.println(twoCaptains);
 
-        //добавил ещё одну книгу А Конана Дойля для тестов
+        //добавил ещё одну книгу А. Конана Дойля для тестов
         Book aStudyInScarlet = new Book("Этюд в багровых тонах", arthurConanDoyle, 1887);
         //Сравнение авторов у книг А. Конана Дойля
         System.out.println("theLostWorld.getAuthor().equals(aStudyInScarlet.getAuthor()) = " + theLostWorld.getAuthor().equals(aStudyInScarlet.getAuthor()));
