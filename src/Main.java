@@ -7,5 +7,8 @@ public class Main {
         Book theLostWorld = new Book("Затерянный мир", arthurConanDoyle, 1912);
 
         twoCaptains.setYearOfPublication(1640);
+
+        System.out.println(theLostWorld + "\n");
+        System.out.println(twoCaptains);
     }
 }
