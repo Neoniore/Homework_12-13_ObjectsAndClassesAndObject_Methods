@@ -14,11 +14,11 @@ public class Book {
     }
 
     public Author getAuthor() {
-        return this.author;
+        return author;
     }
 
     public int getYearOfPublication() {
-        return this.yearOfPublication;
+        return yearOfPublication;
     }
 
     public void setYearOfPublication(int yearOfPublication) {
