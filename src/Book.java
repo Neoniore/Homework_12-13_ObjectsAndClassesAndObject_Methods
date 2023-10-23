@@ -14,14 +14,33 @@ public class Book {
     }
 
     public Author getAuthor() {
-        return this.author;
+        return author;
     }
 
     public int getYearOfPublication() {
-        return this.yearOfPublication;
+        return yearOfPublication;
     }
 
     public void setYearOfPublication(int yearOfPublication) {
         this.yearOfPublication = yearOfPublication;
+    }
+
+    @Override
+    public String toString() {
+        return "Название книги - " + title + "\nАвтор - " + author.toString() + "\nГод публикации - " + yearOfPublication;
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if (this.getClass() != other.getClass()) {
+            return false;
+        }
+        Book book = (Book) other;
+        return title.equals(book.title) && author.equals(book.author);
+    }
+
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(title, author);
     }
 }
